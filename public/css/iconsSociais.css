@@ -1,0 +1,31 @@
+.social-icons a:hover {
+  transform: translateY(-3px);
+}
+
+.social-icons a i {
+  transition: transform 0.2s;
+}
+
+.social-icons a:hover i {
+  transform: scale(1.2);
+}
+
+.fa-facebook-f {
+  color: #3B5998;
+}
+
+.fa-twitter {
+  color: #00b7ff;
+}
+
+.fa-instagram {
+  color: #da365f;
+}
+
+.fa-youtube {
+  color: #cd201f;
+}
+
+.fa-twitch {
+  color: #c300ff;
+}

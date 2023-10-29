@@ -1,0 +1,70 @@
+.streamer {
+  background-color: #000;
+  margin: 30px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0px 2px 5px rgb(190, 194, 194);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.streamer:hover {
+  transform: translateY(-7px);
+}
+
+.streamer h2 {
+  background-color: #000000;
+  border-radius: 20px 20px 0 0;
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+.streamer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.streamer li {
+  border-top: none;
+}
+
+.streamer li a {
+  color: #ffffff;
+  display: block;
+  padding: 13px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  border-radius: 12px;
+  border: 2px solid #eef0f1;
+  background-color: #000000d5;
+  margin-top: 10px;
+}
+
+.streamer li a:hover {
+  background-color: #e7e2e2;
+  color: #000000;
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  border: 2px solid #fafafa;
+}
+
+.status-indicator.ao.vivo {
+  background: #ff0000;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+  padding: 6px;
+  border-radius: 3px;
+  width: auto;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}

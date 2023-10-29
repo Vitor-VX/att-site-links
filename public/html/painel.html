@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/painel.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.8.0/dist/sweetalert2.min.css">
+  <title>Painel</title>
+</head>
+
+<body>
+
+  <form id="streamerForm">
+    <h1>Adicionar Streamer</h1>
+    <label for="name">Nome:</label>
+    <input type="text" id="name">
+
+    <label for="twitchURL">URL do Twitch:</label>
+    <input type="text" id="twitchURL">
+
+    <label for="instagramURL">URL do Instagram:</label>
+    <input type="text" id="instagramURL">
+
+    <label for="twitterURL">URL do Twitter:</label>
+    <input type="text" id="twitterURL">
+
+    <div class="campo_botoes_input">
+      <button  class="btn_painel" type="submit">Adicionar <i class="bi bi-plus-circle"></i></button>
+      <button class="btn_painel" type="button">Logs Painel <i class="bi bi-braces"></i></button>
+    </div>
+  </form>
+
+  <h2>Streamers Cadastrados:</h2>
+  <ul id="streamerList"></ul>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.8.0/dist/sweetalert2.all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="../scripts/scriptPainel.js"></script>
+</body>
+
+</html>
